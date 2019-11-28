@@ -53,9 +53,14 @@ const init = () => {
     }, t + 2300 )
 }
 
+/**
+ * Set a table cell's background colour that's been identified by row and column number
+ * @param {Number} row row number of the cell (zero index)
+ * @param {Number} col column number of the cell (zero index)
+ * @param {String} colour the colour you wish to change the cell to.
+ */
 const setCell = ( row, col, colour ) => {
 
-    // index starts at zero
     const cell = document.querySelector( '#app-table' ).rows[ row ].cells[ col ]
     cell.style.backgroundColor = colour
     setTimeout( () => { cell.style.backgroundColor = 'unset' }, 1000 )
