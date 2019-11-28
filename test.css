@@ -1,0 +1,21 @@
+#app-table {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: calc(100% - 2px); /* minus border pixel size to remove scroll bar */
+    background-color: #222;
+    border-collapse: collapse;
+}
+
+td {
+    border: 2px solid black;
+    transition: all 1s;
+}
+
+button {
+    z-index: 1;
+    position: relative;
+}
